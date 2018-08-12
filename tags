@@ -1,0 +1,24 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+adduserandpass	autorice.sh	/^adduserandpass() { \\$/;"	f
+aurinstall	autorice.sh	/^aurinstall() { \\$/;"	f
+finalize	autorice.sh	/^finalize(){ \\$/;"	f
+getuserandpass	autorice.sh	/^getuserandpass() { \\$/;"	f
+gitmakeinstall	autorice.sh	/^gitmakeinstall() {$/;"	f
+initialcheck	autorice.sh	/^initialcheck() { pacman -S --noconfirm --needed dialog || { echo "Are you sure you're running this as the root user? Are you sure you're using an Arch-based distro? ;-) Are you sure you have an internet connection?"; exit; } ;}$/;"	f
+installationloop	autorice.sh	/^installationloop() { \\$/;"	f
+maininstall	autorice.sh	/^maininstall() { # Installs all needed programs from main repo.$/;"	f
+manualinstall	autorice.sh	/^manualinstall() { # Installs $1 manually if not installed. Used only for AUR helper here.$/;"	f
+newperms	autorice.sh	/^newperms() { # Set special sudoers settings for install (or after).$/;"	f
+preinstallmsg	autorice.sh	/^preinstallmsg() { \\$/;"	f
+putgitrepo	autorice.sh	/^putgitrepo() { # Downlods a gitrepo $1 and places the files in $2 only overwriting conflicts$/;"	f
+refreshkeys	autorice.sh	/^refreshkeys() { \\$/;"	f
+resetpulse	autorice.sh	/^resetpulse() { dialog --infobox "Reseting Pulseaudio..." 4 50$/;"	f
+serviceinit	autorice.sh	/^serviceinit() { for service in $@; do$/;"	f
+systembeepoff	autorice.sh	/^systembeepoff() { dialog --infobox "Getting rid of annoying sytem beep sound..." 10 50$/;"	f
+usercheck	autorice.sh	/^usercheck() { \\$/;"	f
+welcomemsg	autorice.sh	/^welcomemsg() { \\$/;"	f

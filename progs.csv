@@ -1,0 +1,253 @@
+Tag,Name in repo or Git URL,Purpose
+,alsa-tools,Sound
+,alsa-utils,Sound
+A,archey4,System Info
+,arm-none-eabi-binutils,
+,arm-none-eabi-gcc,
+,arm-none-eabi-newlib,
+,atom,GUI editor
+,audio-recorder,Record Audio/Music
+,autoconf,
+,automake,
+,awesome,
+,bash,
+,binutils,
+,bison,
+,brasero,Write DVDs
+,bzip2,
+,cheese,Webcam images
+,chromium,Browser
+,cifs-utils,
+,cmake,
+,cmus,Music Player (NCURSES based)
+,coreutils,
+,cryptsetup,
+,ctags,TAGS generator
+,deluge,Torrent client
+,device-mapper,
+,devtools,
+,dfu-util,
+,dhcpcd,
+,dialog,
+,diffutils,
+,docker,
+,e2fsprogs,
+,easytag,Change music file tags
+,efibootmgr,
+,emacs,Inferior commandline based editor
+,fakeroot,
+,feh,Image viewer
+,figlet,Commandline fancy text generator
+,figlet-fonts,Commandline fancy fonts
+,file,
+,filesystem,
+,findutils,
+,firefox,
+,flake8,
+,flashplugin,
+,flex,
+,font-manager,
+,font-mathematica,
+,gawk,
+,gcc,GNU C compiler
+,gcc-fortran,GNU Fortran compiler
+,gcc-libs,
+,gdal,
+,gettext,
+,ghostscript,
+,git,GIT
+,glibc,
+,global,
+,gnome-keyring,
+,gnome-terminal,
+,go,GO
+,grep,
+,grub,
+,gsfonts,
+,gvim,
+,gzip,
+,htop,NCURSES program manager
+,i3-gaps,
+,i3blocks,
+,i3lock,
+,i3status,
+,imagemagick,
+,inetutils,
+,inkscape,
+,intel-ucode,
+,iproute2,
+,iputils,
+,ipython,IPython
+,irssi,IRSSI - A sweet IRC client
+,jfsutils,
+,julia,JULIA programming shell
+,julia-docs,JULIA documentation
+,less,LESS - To view files in commandline
+,libreoffice-fresh,LibreOffice - Replaces Office
+,licenses,
+,linux,
+,logrotate,
+,lolcat,
+,lvm2,
+,m4,
+,magma,
+,make,
+,man-db,
+,man-pages,
+,mdadm,
+,mirage,
+,mpc,
+,mpd,
+,mupdf,
+,nano,
+,ncmpcpp,
+,neomutt,Terminal based email client
+,neovim,
+,nerd-fonts-complete,
+,netctl,
+,network-manager-applet,
+,networkmanager,
+,ninja,
+,offlineimap,
+,openconnect,
+,opendesktop-fonts,
+,openssh,
+,pacman,
+,patch,
+,pavucontrol,
+,pciutils,
+,perl,
+,pkgconf,
+,procps-ng,
+,profont,
+,psmisc,
+,pstoedit,
+,pulseaudio,
+,pulseaudio-alsa,
+,pygtk,
+,python-gobject,
+,python-keras,
+,python-matplotlib,
+,python-pandas,
+,python-pillow,
+,python-pip,
+,python-pyside,
+,python-rope,
+,python-tensorflow,
+,python2-keras,
+,python2-lxml,
+,python2-rope,
+,r,Program in R
+,ranger,Ranger - Terminal based file browser
+,reiserfsprogs,
+,rofi,ROFI - A program launcher
+,rust,RUST programming language
+,rxvt-unicode,URXVT - Lightweight terminal
+,s-nail,
+,sed,
+,shadow,
+A,slack-desktop,Desktop interface to slack
+,spotify,GUI music player
+,sublime-text-dev,
+,sudo,Manage permisions with sudo
+,sysfsutils,
+,systemd-sysvcompat,
+,tar,
+,task,TaskWarrior - Nice terminal based task manager
+,tcl,
+,terminus-font,
+,termite, Termite - A fancy terminal emulator
+,texinfo,
+,texlive-core,Core LaTex
+,texlive-fontsextra,
+,texlive-science,
+,textext,
+,the_silver_searcher,
+,thunar,GUI File Browser
+,timew,TimeWarrior - Terminal based time tracker
+,tk,TK - Needed to install R packages
+,tmux, TMUX - Terminal Multiplexer
+,tmuxinator, tmuxinator - 
+,trizen-git,
+,ttf-computer-modern-fonts,
+,ttf-droid,
+,ttf-freefont,
+,ttf-gentium,
+,ttf-inconsolata,
+,ttf-junicode,
+,ttf-linux-libertine,
+,ttf-ubuntu-font-family,
+,unzip,
+,urxvt-perls,URXVT plugin
+,urxvt-tabbedex,URXVT plugin
+,usb-creator,
+,usbutils,
+,util-linux,
+,vi,Basic VI
+,vim,Superior terminal-based editor
+,vimpager,Use vim as a pager
+,vit,VIT - ncurses interface to TaskWarrior
+,vlc,
+,w3m,Terminal based web browser
+,wget,
+,which,
+,xclip,
+,xf86-video-nouveau,
+,xf86-video-vesa,
+,xfsprogs,
+,xorg-bdftopcf,
+,xorg-docs,
+,xorg-font-util,
+,xorg-fonts-100dpi,
+,xorg-fonts-75dpi,
+,xorg-fonts-encodings,
+,xorg-fonts-type1,
+,xorg-iceauth,
+,xorg-luit,
+,xorg-mkfontdir,
+,xorg-mkfontscale,
+,xorg-server,
+,xorg-server-common,
+,xorg-server-devel,
+,xorg-server-xdmx,
+,xorg-server-xephyr,
+,xorg-server-xnest,
+,xorg-server-xvfb,
+,xorg-server-xwayland,
+,xorg-sessreg,
+,xorg-setxkbmap,
+,xorg-smproxy,
+,xorg-x11perf,
+,xorg-xauth,
+,xorg-xbacklight,
+,xorg-xcmsdb,
+,xorg-xcursorgen,
+,xorg-xdpyinfo,
+,xorg-xdriinfo,
+,xorg-xev,
+,xorg-xgamma,
+,xorg-xhost,
+,xorg-xinit,
+,xorg-xinput,
+,xorg-xkbcomp,
+,xorg-xkbevd,
+,xorg-xkbutils,
+,xorg-xkill,
+,xorg-xlsatoms,
+,xorg-xlsclients,
+,xorg-xmodmap,
+,xorg-xpr,
+,xorg-xprop,
+,xorg-xrandr,
+,xorg-xrdb,
+,xorg-xrefresh,
+,xorg-xset,
+,xorg-xsetroot,
+,xorg-xvinfo,
+,xorg-xwd,
+,xorg-xwininfo,
+,xorg-xwud,
+,xterm,
+,zathura,PDF viewer
+,zathura-pdf-mupdf,Enable PDF view
+,zsh,ZSH - the Zed shell
