@@ -266,5 +266,5 @@ clear
 # }}} Old stuffs
 
 # {{{ Vim modelines
-# vim: set foldmethod=marker
+# vim: set foldmethod=marker:
 # }}} Vim modelines
