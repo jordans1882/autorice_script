@@ -5,8 +5,7 @@
 # Date Initialized: August 2, 2018
 # Date Modified: August 2, 2018
 # Description:
-#   A script that configures my or some custom version of my system
-# Dependencies: git and make . Make sure these are either in the progs.csv file or installed beforehand.
+#   A bash script that configures my system
 # }}} Header
 
 # {{{ Options and Variables
@@ -22,7 +21,7 @@ esac done
 # DEFAULTS:
 [ -z ${dotfilesrepo+x} ] && dotfilesrepo="https://github.com/jordans1882/dotfiles.git"
 [ -z ${progsfile+x} ] && progsfile="https://raw.githubusercontent.com/jordans1882/autorice_script/master/progs.csv"
-[ -z ${aurhelper+x} ] && aurhelper="trizen"
+[ -z ${aurhelper+x} ] && aurhelper="trizen-git"
 
 # }}} Options and Variables
 
@@ -181,6 +180,7 @@ refreshkeys
 # in a fakeroot environment, this is required for all builds with AUR.
 newperms "%wheel ALL=(ALL) NOPASSWD: ALL"
 
+# Install Trizen
 manualinstall $aurhelper
 
 # The command that does all the installing. Reads the progs.csv file and
@@ -193,8 +193,10 @@ installationloop
 putgitrepo "$dotfilesrepo" "/home/$name"
 
 # Install the LARBS Firefox profile in ~/.mozilla/firefox/
-putgitrepo "https://github.com/LukeSmithxyz/mozillarbs.git" "/home/$name/.mozilla/firefox"
+# TODO: look into Luke's Firefox profile
+# putgitrepo "https://github.com/LukeSmithxyz/mozillarbs.git" "/home/$name/.mozilla/firefox"
 
+# TODO: Check to see if I want pulse Audio or if ALSA works well enough
 # Pulseaudio, if/when initially installed, often needs a restart to work immediately.
 [[ -f /usr/bin/pulseaudio ]] && resetpulse
 
@@ -206,7 +208,7 @@ systembeepoff
 
 # This line, overwriting the `newperms` command above will allow the user to run
 # serveral important commands, `shutdown`, `reboot`, updating, etc. without a password.
-# TODO: change packer to trizen
+# TODO: change packer to trizen?
 newperms "%wheel ALL=(ALL) ALL\n%wheel ALL=(ALL) NOPASSWD: /usr/bin/shutdown,/usr/bin/reboot,/usr/bin/systemctl suspend,/usr/bin/wifi-menu,/usr/bin/mount,/usr/bin/umount,/usr/bin/pacman -Syu,/usr/bin/pacman -Syyu,/usr/bin/packer -Syu,/usr/bin/packer -Syyu,/usr/bin/systemctl restart NetworkManager,/usr/bin/rc-service NetworkManager restart, /usr/bin/pacman -Syyu --noconfirm"
 
 # Last message! Install complete!

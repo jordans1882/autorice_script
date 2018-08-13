@@ -21,6 +21,7 @@ A,archey4,System Info
 ,cmake,
 ,cmus,Music Player (NCURSES based)
 ,coreutils,
+,crony,
 ,cryptsetup,
 ,ctags,TAGS generator
 ,deluge,Torrent client
@@ -55,6 +56,7 @@ A,archey4,System Info
 ,gdal,
 ,gettext,
 ,ghostscript,
+,gimp,GIMP - Raster graphics editor
 ,git,GIT
 ,glibc,
 ,global,
@@ -67,13 +69,14 @@ A,archey4,System Info
 ,gvim,
 ,gzip,
 ,htop,NCURSES program manager
-,i3-gaps,
-,i3blocks,
-,i3lock,
+,i3,i3wm - Dynamic tiling manager
+,i3-gaps, Useless gaps for i3
+,i3blocks,Menubar for i3
+,i3lock,Screenlock for i3?
 ,i3status,
-,imagemagick,
+,imagemagick,Imagemagick - Terminal based image editor
 ,inetutils,
-,inkscape,
+,inkscape,Inkscape - SVG graphics editor
 ,intel-ucode,
 ,iproute2,
 ,iputils,
@@ -90,8 +93,8 @@ A,archey4,System Info
 ,lolcat,
 ,lvm2,
 ,m4,
-,magma,
-,make,
+A,magma, MAGMA - gpu based BLAS
+,make,GNU make - to install things with makefiles
 ,man-db,
 ,man-pages,
 ,mdadm,
@@ -99,14 +102,14 @@ A,archey4,System Info
 ,mpc,
 ,mpd,
 ,mupdf,
-,nano,
-,ncmpcpp,
+,nano,Nano - A supremely inferior terminal based editor
+,ncmpcpp,NCMPCPP - An ncurses based music player
 ,neomutt,Terminal based email client
-,neovim,
+,neovim,NeoVim - Vim for the future
 ,nerd-fonts-complete,
 ,netctl,
-,network-manager-applet,
-,networkmanager,
+,network-manager-applet, Applet to interface with network manager
+,networkmanager,NetworkManager - To manage network connections
 ,ninja,
 ,offlineimap,
 ,openconnect,
@@ -116,15 +119,17 @@ A,archey4,System Info
 ,patch,
 ,pavucontrol,
 ,pciutils,
-,perl,
+,perl,Program in perl
 ,pkgconf,
 ,procps-ng,
 ,profont,
 ,psmisc,
 ,pstoedit,
-,pulseaudio,
-,pulseaudio-alsa,
+,pulseaudio,Audio
+,pulseaudio-alsa,Alsa interface to Pulseaudio
 ,pygtk,
+,python,Program in python 3
+,python2,Program in python 2
 ,python-gobject,
 ,python-keras,
 ,python-matplotlib,
@@ -148,27 +153,27 @@ A,archey4,System Info
 ,shadow,
 A,slack-desktop,Desktop interface to slack
 ,spotify,GUI music player
-,sublime-text-dev,
+,sublime-text-dev,Sublime - GUI text editor
 ,sudo,Manage permisions with sudo
 ,sysfsutils,
 ,systemd-sysvcompat,
 ,tar,
 ,task,TaskWarrior - Nice terminal based task manager
-,tcl,
+,tcl,Helps install packages in R
 ,terminus-font,
 ,termite, Termite - A fancy terminal emulator
 ,texinfo,
 ,texlive-core,Core LaTex
 ,texlive-fontsextra,
 ,texlive-science,
-,textext,
+,textext,textext - Plugin for GIMP
 ,the_silver_searcher,
 ,thunar,GUI File Browser
 ,timew,TimeWarrior - Terminal based time tracker
 ,tk,TK - Needed to install R packages
 ,tmux, TMUX - Terminal Multiplexer
 ,tmuxinator, tmuxinator - 
-,trizen-git,
+A,trizen-git,
 ,ttf-computer-modern-fonts,
 ,ttf-droid,
 ,ttf-freefont,
