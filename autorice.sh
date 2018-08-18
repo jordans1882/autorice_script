@@ -138,7 +138,7 @@ putdotfiles() { # Downlods a gitrepo $1 and places the files in $2 only overwrit
 	dir=$(mktemp -d)
 	chown -R $name:wheel $dir
 	sudo -u $name git clone --depth 1 $1 $dir/gitrepo &>/dev/null &&
-  sudo -u $name rm -r $dir/gitrepo/.git &&
+  sudo -u $name rm -rf $dir/gitrepo/.git &&
 	sudo -u $name mkdir -p "$2" &&
 	sudo -u $name cp -rT $dir/gitrepo $2
 	}
