@@ -1,7 +1,11 @@
-# Auto-rice scripts
-This repo contains a script to auto-rice a new Arch based linux machine
+# Mise en Place
+This repo contains a script for my computational mise en place. The name of
+this repo is in regards to everything needing to be in place before I begin my
+computational cooking. It's also a tongue-in-cheek reference to my inability to
+work without my dotfiles/system being in perfect working order. Hence my
+aptitude for procrastination since I assume they are never in working order. 
 
-To install the system, simply run the following in terminal
+To install my system, simply run the following in terminal
 ```{bash}
 curl -LO https://raw.githubusercontent.com/jordans1882/autorice_script/master/autorice.sh
 bash autorice.sh
