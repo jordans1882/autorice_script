@@ -106,7 +106,7 @@ A,magma, MAGMA - gpu based BLAS
 ,ncmpcpp,NCMPCPP - An ncurses based music player
 ,neomutt,Terminal based email client
 ,neovim,NeoVim - Vim for the future
-,nerd-fonts-complete,
+A,nerd-fonts-complete,
 ,netctl,
 ,network-manager-applet, Applet to interface with network manager
 ,networkmanager,NetworkManager - To manage network connections

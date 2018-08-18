@@ -7,6 +7,7 @@
 adduserandpass	autorice.sh	/^adduserandpass() { \\$/;"	f
 aurinstall	autorice.sh	/^aurinstall() { \\$/;"	f
 finalize	autorice.sh	/^finalize(){ \\$/;"	f
+fontinstall	autorice.sh	/^fontinstall() {$/;"	f
 getuserandpass	autorice.sh	/^getuserandpass() { \\$/;"	f
 gitmakeinstall	autorice.sh	/^gitmakeinstall() {$/;"	f
 initialcheck	autorice.sh	/^initialcheck() { pacman -S --noconfirm --needed dialog || { echo "Are you sure you're running this as the root user? Are you sure you're using an Arch-based distro? ;-) Are you sure you have an internet connection?"; exit; } ;}$/;"	f

@@ -71,6 +71,12 @@ adduserandpass() { \
 	echo "$name:$pass1" | chpasswd
 	unset pass1 pass2 ;}
 
+fontinstall() {
+	# Install UbuntuMono Nerd font
+	mkdir -p ~/.local/share/fonts
+	cd ~/.local/share/fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complete.otf" https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete.otf
+	}
+
 gitmakeinstall() {
 	dir=$(mktemp -d)
 	dialog --title "Autorice Installation" --infobox "Installing \`$(basename $1)\` ($n of $total) via \`git\` and \`make\`. $(basename $1) $2." 5 70
@@ -98,7 +104,6 @@ installationloop() { \
 	while IFS=, read -r tag program comment; do
 	n=$((n+1))
 	case "$tag" in
-	"T") trizeninitialinstall "$program" "$comment" ;;
 	"") maininstall "$program" "$comment" ;;
 	"A") aurinstall "$program" "$comment" ;;
 	"G") gitmakeinstall "$program" "$comment" ;;
@@ -146,7 +151,7 @@ manualinstall() { # Installs $1 manually if not installed. Used only for AUR hel
 finalize(){ \
 	dialog --infobox "Preparing welcome message..." 4 50
 	echo "exec_always --no-startup-id notify-send -i ~/.scripts/larbs.png '<b>Welcome to the Autorice script:</b> Press Super+F1 for the manual.' -t 10000"  >> /home/$name/.config/i3/config
-	dialog --title "All done!" --msgbox "Congrats! Provided there were no hidden errors, the script completed successfully and all the programs and configuration files should be in place.\n\nTo run the new graphical environment, log out and log back in as your new user, then run the command \"startx\" to start the graphical environment.\n\n-Luke" 12 80
+	dialog --title "All done!" --msgbox "Congrats! Provided there were no hidden errors, the script completed successfully and all the programs and configuration files should be in place.\n\nTo run the new graphical environment, log out and log back in as your new user, then run the command \"startx\" to start the graphical environment.\n\n-Jordan" 12 80
 	}
 
 
