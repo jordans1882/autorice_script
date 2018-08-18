@@ -199,6 +199,11 @@ installationloop
 
 # Install the dotfiles in the user's home directory
 putgitrepo "$dotfilesrepo" "/home/$name"
+# Make git_repos directory
+# mkdir -p "/home/$name/git_repos"
+# TODO: add list of git repos to put here
+# TODO: add this list of git repos to progs?
+
 
 # Install the LARBS Firefox profile in ~/.mozilla/firefox/
 # TODO: look into Luke's Firefox profile
