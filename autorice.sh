@@ -133,6 +133,16 @@ putgitrepo() { # Downlods a gitrepo $1 and places the files in $2 only overwriti
 	sudo -u $name cp -rT $dir/gitrepo $2
 	}
 
+putdotfiles() { # Downlods a gitrepo $1 and places the files in $2 only overwriting conflicts
+	dialog --infobox "Downloading and installing config files..." 4 60
+	dir=$(mktemp -d)
+	chown -R $name:wheel $dir
+	sudo -u $name git clone --depth 1 $1 $dir/gitrepo &>/dev/null &&
+  sudo -u $name rm -r $dir/gitrepo/.git &&
+	sudo -u $name mkdir -p "$2" &&
+	sudo -u $name cp -rT $dir/gitrepo $2
+	}
+
 resetpulse() { dialog --infobox "Reseting Pulseaudio..." 4 50
 	killall pulseaudio &&
 	sudo -n $name pulseaudio --start ;}
@@ -198,7 +208,7 @@ manualinstall trizen-git
 installationloop
 
 # Install the dotfiles in the user's home directory
-putgitrepo "$dotfilesrepo" "/home/$name"
+putdotfiles "$dotfilesrepo" "/home/$name"
 # Make git_repos directory
 # mkdir -p "/home/$name/git_repos"
 # TODO: add list of git repos to put here
