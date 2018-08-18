@@ -88,13 +88,13 @@ gitmakeinstall() {
 
 maininstall() { # Installs all needed programs from main repo.
 	dialog --title "Autorice Installation" --infobox "Installing \`$1\` ($n of $total). $1 $2." 5 70
-	pacman --noconfirm --needed -S "$1" &>/dev/null
+	pacman --noconfirm --needed -S "$1" 
 	}
 
 aurinstall() { \
 	dialog --title "Autorice Installation" --infobox "Installing \`$1\` ($n of $total) from the AUR. $1 $2." 5 70
 	grep "^$1$" <<< "$aurinstalled" && return
-	sudo -u $name $aurhelper -S --noconfirm "$1" &>/dev/null
+	sudo -u $name $aurhelper -S --noconfirm "$1" 
 	}
 
 installationloop() { \
