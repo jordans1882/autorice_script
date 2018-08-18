@@ -185,6 +185,9 @@ refreshkeys
 # in a fakeroot environment, this is required for all builds with AUR.
 newperms "%wheel ALL=(ALL) NOPASSWD: ALL"
 
+# Install Fonts
+fontinstall
+
 # Install Trizen
 manualinstall $aurhelper
 
