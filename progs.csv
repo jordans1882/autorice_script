@@ -6,7 +6,7 @@ A,archey4,System Info
 ,arm-none-eabi-gcc,
 ,arm-none-eabi-newlib,
 ,atom,GUI editor
-,audio-recorder,Record Audio/Music
+A,audio-recorder,Record Audio/Music
 ,autoconf,
 ,automake,
 ,awesome,
@@ -39,7 +39,7 @@ A,archey4,System Info
 ,fakeroot,
 ,feh,Image viewer
 ,figlet,Commandline fancy text generator
-,figlet-fonts,Commandline fancy fonts
+A,figlet-fonts,Commandline fancy fonts
 ,file,
 ,filesystem,
 ,findutils,
@@ -47,7 +47,7 @@ A,archey4,System Info
 ,flake8,
 ,flashplugin,
 ,flex,
-,font-manager,
+A,font-manager,
 ,font-mathematica,
 ,gawk,
 ,gcc,GNU C compiler
@@ -59,7 +59,7 @@ A,archey4,System Info
 ,gimp,GIMP - Raster graphics editor
 ,git,GIT
 ,glibc,
-,global,
+A,global,
 ,gnome-keyring,
 ,gnome-terminal,
 ,go,GO
@@ -98,7 +98,7 @@ A,magma, MAGMA - gpu based BLAS
 ,man-db,
 ,man-pages,
 ,mdadm,
-,mirage,
+A,mirage,
 ,mpc,
 ,mpd,
 ,mupdf,
@@ -131,7 +131,7 @@ A,nerd-fonts-complete,
 ,python,Program in python 3
 ,python2,Program in python 2
 ,python-gobject,
-,python-keras,
+A,python-keras,
 ,python-matplotlib,
 ,python-pandas,
 ,python-pillow,
@@ -139,7 +139,7 @@ A,nerd-fonts-complete,
 ,python-pyside,
 ,python-rope,
 ,python-tensorflow,
-,python2-keras,
+A,python2-keras,
 ,python2-lxml,
 ,python2-rope,
 ,r,Program in R
@@ -152,8 +152,8 @@ A,nerd-fonts-complete,
 ,sed,
 ,shadow,
 A,slack-desktop,Desktop interface to slack
-,spotify,GUI music player
-,sublime-text-dev,Sublime - GUI text editor
+A,spotify,GUI music player
+A,sublime-text-dev,Sublime - GUI text editor
 ,sudo,Manage permisions with sudo
 ,sysfsutils,
 ,systemd-sysvcompat,
@@ -166,15 +166,15 @@ A,slack-desktop,Desktop interface to slack
 ,texlive-core,Core LaTex
 ,texlive-fontsextra,
 ,texlive-science,
-,textext,textext - Plugin for GIMP
+A,textext,textext - Plugin for GIMP
 ,the_silver_searcher,
 ,thunar,GUI File Browser
 ,timew,TimeWarrior - Terminal based time tracker
 ,tk,TK - Needed to install R packages
 ,tmux, TMUX - Terminal Multiplexer
-,tmuxinator, tmuxinator - 
+A,tmuxinator, tmuxinator - 
 A,trizen-git,
-,ttf-computer-modern-fonts,
+A,ttf-computer-modern-fonts,
 ,ttf-droid,
 ,ttf-freefont,
 ,ttf-gentium,
@@ -184,14 +184,14 @@ A,trizen-git,
 ,ttf-ubuntu-font-family,
 ,unzip,
 ,urxvt-perls,URXVT plugin
-,urxvt-tabbedex,URXVT plugin
-,usb-creator,
+A,urxvt-tabbedex,URXVT plugin
+A,usb-creator,
 ,usbutils,
 ,util-linux,
 ,vi,Basic VI
 ,vim,Superior terminal-based editor
 ,vimpager,Use vim as a pager
-,vit,VIT - ncurses interface to TaskWarrior
+A,vit,VIT - ncurses interface to TaskWarrior
 ,vlc,
 ,w3m,Terminal based web browser
 ,wget,
