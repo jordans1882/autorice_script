@@ -93,7 +93,6 @@ A,global,
 ,lolcat,
 ,lvm2,
 ,m4,
-A,magma, MAGMA - gpu based BLAS
 ,make,GNU make - to install things with makefiles
 ,man-db,
 ,man-pages,

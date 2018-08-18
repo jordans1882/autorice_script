@@ -21,7 +21,7 @@ esac done
 # DEFAULTS:
 [ -z ${dotfilesrepo+x} ] && dotfilesrepo="https://github.com/jordans1882/dotfiles.git"
 [ -z ${progsfile+x} ] && progsfile="https://raw.githubusercontent.com/jordans1882/autorice_script/master/progs.csv"
-[ -z ${aurhelper+x} ] && aurhelper="trizen-git"
+[ -z ${aurhelper+x} ] && aurhelper="trizen"
 
 # }}} Options and Variables
 
@@ -88,13 +88,13 @@ gitmakeinstall() {
 
 maininstall() { # Installs all needed programs from main repo.
 	dialog --title "Autorice Installation" --infobox "Installing \`$1\` ($n of $total). $1 $2." 5 70
-	pacman --noconfirm --needed -S "$1" 
+	sudo -u $name pacman --noconfirm --needed -S "$1" 
 	}
 
 aurinstall() { \
 	dialog --title "Autorice Installation" --infobox "Installing \`$1\` ($n of $total) from the AUR. $1 $2." 5 70
 	grep "^$1$" <<< "$aurinstalled" && return
-	sudo -u $name $aurhelper -S --noconfirm "$1" 
+	$aurhelper -S --noconfirm "$1" 
 	}
 
 installationloop() { \
@@ -189,7 +189,7 @@ newperms "%wheel ALL=(ALL) NOPASSWD: ALL"
 fontinstall
 
 # Install Trizen
-manualinstall $aurhelper
+manualinstall trizen-git
 
 # The command that does all the installing. Reads the progs.csv file and
 # installs each needed program the way required. Be sure to run this only after
