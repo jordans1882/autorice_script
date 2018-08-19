@@ -137,10 +137,9 @@ putdotfiles() { # Downlods a gitrepo $1 and places the files in $2 only overwrit
 	dialog --infobox "Downloading and installing config files..." 4 60
 	dir=$(mktemp -d)
 	chown -R $name:wheel $dir
-	sudo -u $name git clone --depth 1 $1 $dir/gitrepo &>/dev/null &&
-  sudo -u $name rm -rf $dir/gitrepo/.git &&
+	sudo -u $name git clone --depth 1 $1 $dir/ &>/dev/null &&
 	sudo -u $name mkdir -p "$2" &&
-	sudo -u $name cp -rT $dir/gitrepo $2
+  sudo -u $name rsync -rv $dir/ $2 --exclude=.git/
 	}
 
 resetpulse() { dialog --infobox "Reseting Pulseaudio..." 4 50
