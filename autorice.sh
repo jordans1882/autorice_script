@@ -88,13 +88,13 @@ gitmakeinstall() {
 
 maininstall() { # Installs all needed programs from main repo.
 	dialog --title "Autorice Installation" --infobox "Installing \`$1\` ($n of $total). $1 $2." 5 70
-	sudo -u $name pacman --noconfirm --needed -S "$1" 
+	sudo -u $name pacman --noconfirm --needed -S "$1" &>/dev/null
 	}
 
 aurinstall() { \
 	dialog --title "Autorice Installation" --infobox "Installing \`$1\` ($n of $total) from the AUR. $1 $2." 5 70
 	grep "^$1$" <<< "$aurinstalled" && return
-	sudo -u $name $aurhelper -S --noconfirm "$1" 
+	sudo -u $name $aurhelper -S --noconfirm "$1" &>/dev/null
 	}
 
 installationloop() { \
@@ -139,7 +139,7 @@ putdotfiles() { # Downlods a gitrepo $1 and places the files in $2 only overwrit
 	chown -R $name:wheel $dir
 	sudo -u $name git clone --depth 1 $1 $dir/ &>/dev/null &&
 	sudo -u $name mkdir -p "$2" &&
-  sudo -u $name rsync -rv $dir/ $2 --exclude=.git/
+  sudo -u $name rsync -urv $dir/ $2 --exclude=.git/ &>/dev/null
 	}
 
 resetpulse() { dialog --infobox "Reseting Pulseaudio..." 4 50
