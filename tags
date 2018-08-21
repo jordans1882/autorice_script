@@ -16,6 +16,7 @@ maininstall	autorice.sh	/^maininstall() { # Installs all needed programs from ma
 manualinstall	autorice.sh	/^manualinstall() { # Installs $1 manually if not installed. Used only for AUR helper here.$/;"	f
 newperms	autorice.sh	/^newperms() { # Set special sudoers settings for install (or after).$/;"	f
 preinstallmsg	autorice.sh	/^preinstallmsg() { \\$/;"	f
+putdotfiles	autorice.sh	/^putdotfiles() { # Downlods a gitrepo $1 and places the files in $2 only overwriting conflicts$/;"	f
 putgitrepo	autorice.sh	/^putgitrepo() { # Downlods a gitrepo $1 and places the files in $2 only overwriting conflicts$/;"	f
 refreshkeys	autorice.sh	/^refreshkeys() { \\$/;"	f
 resetpulse	autorice.sh	/^resetpulse() { dialog --infobox "Reseting Pulseaudio..." 4 50$/;"	f
