@@ -39,7 +39,7 @@ A,audio-recorder,Record Audio/Music
 ,fakeroot,
 ,feh,Image viewer
 ,figlet,Commandline fancy text generator
-G,https://github.com/blueset/figlet-fonts.git,Commandline fancy fonts
+G,https://github.com/cmatsuoka/figlet-fonts.git,Commandline fancy fonts
 ,file,
 ,filesystem,
 ,findutils,
