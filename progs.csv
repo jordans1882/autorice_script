@@ -1,7 +1,6 @@
 tag,Name in repo or Git URL,Purpose
 ,alsa-tools,Sound
 ,alsa-utils,Sound
-A,archey4,System Info
 G,https://github.com/HorlogeSkynet/archey4.git,System Info
 ,arm-none-eabi-binutils,
 ,arm-none-eabi-gcc,
@@ -40,7 +39,7 @@ A,audio-recorder,Record Audio/Music
 ,fakeroot,
 ,feh,Image viewer
 ,figlet,Commandline fancy text generator
-A,figlet-fonts,Commandline fancy fonts
+G,https://github.com/blueset/figlet-fonts.git,Commandline fancy fonts
 ,file,
 ,filesystem,
 ,findutils,
