@@ -78,13 +78,20 @@ fontinstall() {
 	}
 
 gitmakeinstall() {
-	dir=$(mktemp -d)
+  dir=/home/$name/git_repos/$(basename $1)
 	dialog --title "Autorice Installation" --infobox "Installing \`$(basename $1)\` ($n of $total) via \`git\` and \`make\`. $(basename $1) $2." 5 70
 	git clone --depth 1 "$1" $dir &>/dev/null
 	cd $dir
-	make &>/dev/null
-	make install &>/dev/null
-	cd /tmp ;}
+  if [ -f Makefile ]; then
+    make &>/dev/null
+    make install &>/dev/null
+    cd /tmp 
+  fi
+  if [ -f setup.py ]; then
+    python setup.py
+    cd /tmp 
+  fi
+  }
 
 maininstall() { # Installs all needed programs from main repo.
 	dialog --title "Autorice Installation" --infobox "Installing \`$1\` ($n of $total). $1 $2." 5 70
@@ -156,6 +163,12 @@ manualinstall() { # Installs $1 manually if not installed. Used only for AUR hel
 	cd $1 &&
 	sudo -u $name makepkg --noconfirm -si &>/dev/null
 	cd /tmp) ;}
+
+postinstall() {
+  chsh -s /bin/zsh $name &&
+  cd /home/$name &&
+  make
+}
 
 finalize(){ \
 	dialog --infobox "Preparing welcome message..." 4 50
@@ -232,6 +245,10 @@ systembeepoff
 # serveral important commands, `shutdown`, `reboot`, updating, etc. without a password.
 # TODO: change packer to trizen?
 newperms "%wheel ALL=(ALL) ALL\n%wheel ALL=(ALL) NOPASSWD: /usr/bin/shutdown,/usr/bin/reboot,/usr/bin/systemctl suspend,/usr/bin/wifi-menu,/usr/bin/mount,/usr/bin/umount,/usr/bin/pacman -Syu,/usr/bin/pacman -Syyu,/usr/bin/packer -Syu,/usr/bin/packer -Syyu,/usr/bin/systemctl restart NetworkManager,/usr/bin/rc-service NetworkManager restart, /usr/bin/pacman -Syyu --noconfirm"
+
+
+# Post Install: run make for dotfiles repo
+postinstall
 
 # Last message! Install complete!
 finalize

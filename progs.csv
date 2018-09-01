@@ -2,6 +2,7 @@ tag,Name in repo or Git URL,Purpose
 ,alsa-tools,Sound
 ,alsa-utils,Sound
 A,archey4,System Info
+G,https://github.com/HorlogeSkynet/archey4.git,System Info
 ,arm-none-eabi-binutils,
 ,arm-none-eabi-gcc,
 ,arm-none-eabi-newlib,
